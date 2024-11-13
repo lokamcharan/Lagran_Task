@@ -1,0 +1,131 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.filter button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.filter button:hover {
+  background-color: blue;
+  transform: scale(1.05);
+}
+
+.filter button.active {
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  .filter {
+    gap: 15px;
+  }
+
+  .filter button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: calc(25% - 20px);
+  transition: transform 0.3s, box-shadow 0.3s;
+  padding: 20px;
+}
+
+.card-image {
+  width: 250px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  gap: 50px;
+}
+
+.card-button1,
+.card-button2 {
+  color: whitesmoke;
+  border-radius: 15px;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-button1 {
+  background-color: #6495ed;
+}
+
+.card-button1:hover {
+  background-color: blue;
+}
+
+.card-button2 {
+  background-color: #cd5c5c;
+}
+
+.card-button2:hover {
+  background-color: red;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,153 @@
+.cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-image {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  margin-left: 15px;
+}
+
+.cart-item-details {
+  flex: 1;
+  margin-left: 50px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-btn {
+  background-color: #6495ed;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+  background-color: #4169e1;
+}
+
+.delete-btn {
+  background-color: #cd5c5c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #b22222;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-image {
+    width: 120px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+
+  .cart-item-details {
+    margin-left: 0;
+  }
+
+  .quantity-controls p {
+    font-size: 14px;
+  }
+
+  .quantity-btn,
+  .delete-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .cart-total {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 15px;
+  }
+
+  .cart-title {
+    font-size: 20px;
+  }
+
+  .cart-item {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .cart-item-image {
+    width: 100px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .cart-item-details p {
+    font-size: 14px;
+  }
+
+  .quantity-controls {
+    gap: 5px;
+  }
+
+  .quantity-btn,
+  .delete-btn {
+    padding: 4px 8px;
+    font-size: 13px;
+  }
+
+  .cart-total {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
