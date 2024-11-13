@@ -30,7 +30,7 @@ function Direct() {
             <NavLink
               to="/"
               style={{
-                fontSize: "20px",
+                fontSize: "15px",
                 textDecoration: "none",
                 marginRight: "20px",
                 color: "whitesmoke",
@@ -42,7 +42,7 @@ function Direct() {
             <NavLink
               to="/login"
               style={{
-                fontSize: "20px",
+                fontSize: "15px",
                 textDecoration: "none",
                 color: "whitesmoke",
                 marginRight: "20px",
@@ -54,7 +54,7 @@ function Direct() {
             <NavLink
               to="/register"
               style={{
-                fontSize: "20px",
+                fontSize: "15px",
                 textDecoration: "none",
                 color: "whitesmoke",
               }}
@@ -65,10 +65,9 @@ function Direct() {
             <NavLink
               to="/cart"
               style={{
-                fontSize: "20px",
+                fontSize: "15px",
                 textDecoration: "none",
                 color: "whitesmoke",
-                marginLeft: "20px",
               }}
               activeStyle={{ fontWeight: "bold" }}
             >
