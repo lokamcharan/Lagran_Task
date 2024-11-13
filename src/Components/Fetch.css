@@ -107,7 +107,6 @@
   }
 }
 
-/* Tablet view adjustments */
 @media (max-width: 768px) {
   .filter {
     display: flex;
@@ -121,19 +120,17 @@
   }
 }
 
-/* Mobile view adjustments */
 @media (max-width: 480px) {
   .filter {
     flex-direction: column;
     gap: 10px;
-    align-items: center; /* Centers the elements on small screens */
+    align-items: center;
   }
 
   .filter button {
     width: 30%;
     padding: 12px 0;
     font-size: 16px;
-    border-radius: 5px; /* Adds a softer look for mobile */
+    border-radius: 5px;
   }
 }
-
