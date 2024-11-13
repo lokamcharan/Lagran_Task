@@ -19,7 +19,7 @@ function Details() {
 
   return (
     <div style={{ backgroundColor: "grey" }}>
-      <Direct /> 
+      <Direct/> 
       {product && (
         <div className="details-container">
           <h2 className="details-title">{product.title}</h2>
